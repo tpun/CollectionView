@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2476006317A430CE0090C609 /* CVCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476006217A430CE0090C609 /* CVCollectionViewCell.m */; };
+		2476006417A430CE0090C609 /* CVCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476006217A430CE0090C609 /* CVCollectionViewCell.m */; };
 		2486716117A42CD200D7A306 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2486716017A42CD200D7A306 /* Foundation.framework */; };
 		2486716317A42CD200D7A306 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2486716217A42CD200D7A306 /* CoreGraphics.framework */; };
 		2486716517A42CD200D7A306 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2486716417A42CD200D7A306 /* UIKit.framework */; };
@@ -21,6 +23,8 @@
 		2486718217A42CD200D7A306 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2486716417A42CD200D7A306 /* UIKit.framework */; };
 		2486718A17A42CD200D7A306 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2486718817A42CD200D7A306 /* InfoPlist.strings */; };
 		2486718C17A42CD200D7A306 /* CollectionViewTestinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2486718B17A42CD200D7A306 /* CollectionViewTestinTests.m */; };
+		2486719717A42E6C00D7A306 /* CVCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2486719617A42E6C00D7A306 /* CVCollectionViewController.m */; };
+		2486719817A42E6C00D7A306 /* CVCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2486719617A42E6C00D7A306 /* CVCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2476006117A430CE0090C609 /* CVCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCollectionViewCell.h; sourceTree = "<group>"; };
+		2476006217A430CE0090C609 /* CVCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVCollectionViewCell.m; sourceTree = "<group>"; };
 		2486715D17A42CD200D7A306 /* CollectionViewTestin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewTestin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2486716017A42CD200D7A306 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2486716217A42CD200D7A306 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,8 @@
 		2486718717A42CD200D7A306 /* CollectionViewTestinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollectionViewTestinTests-Info.plist"; sourceTree = "<group>"; };
 		2486718917A42CD200D7A306 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2486718B17A42CD200D7A306 /* CollectionViewTestinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewTestinTests.m; sourceTree = "<group>"; };
+		2486719517A42E6C00D7A306 /* CVCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCollectionViewController.h; sourceTree = "<group>"; };
+		2486719617A42E6C00D7A306 /* CVCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,10 @@
 				2486717617A42CD200D7A306 /* CVViewController.m */,
 				2486717817A42CD200D7A306 /* Images.xcassets */,
 				2486716717A42CD200D7A306 /* Supporting Files */,
+				2486719517A42E6C00D7A306 /* CVCollectionViewController.h */,
+				2486719617A42E6C00D7A306 /* CVCollectionViewController.m */,
+				2476006117A430CE0090C609 /* CVCollectionViewCell.h */,
+				2476006217A430CE0090C609 /* CVCollectionViewCell.m */,
 			);
 			path = CollectionViewTestin;
 			sourceTree = "<group>";
@@ -252,7 +264,9 @@
 			files = (
 				2486716D17A42CD200D7A306 /* main.m in Sources */,
 				2486717117A42CD200D7A306 /* CVAppDelegate.m in Sources */,
+				2476006317A430CE0090C609 /* CVCollectionViewCell.m in Sources */,
 				2486717717A42CD200D7A306 /* CVViewController.m in Sources */,
+				2486719717A42E6C00D7A306 /* CVCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2486718C17A42CD200D7A306 /* CollectionViewTestinTests.m in Sources */,
+				2486719817A42E6C00D7A306 /* CVCollectionViewController.m in Sources */,
+				2476006417A430CE0090C609 /* CVCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +471,7 @@
 				2486719117A42CD300D7A306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2486719217A42CD300D7A306 /* Build configuration list for PBXNativeTarget "CollectionViewTestinTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +480,7 @@
 				2486719417A42CD300D7A306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
