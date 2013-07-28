@@ -49,7 +49,7 @@
     viewCell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
 
     NSArray *colors = [NSArray arrayWithObjects:[UIColor greenColor],[UIColor redColor], [UIColor blueColor], [UIColor brownColor], [UIColor orangeColor], nil];
-    viewCell.backgroundColor = colors[indexPath.row];
+    viewCell.contentView.backgroundColor = colors[indexPath.row];
     return cell;
 }
 
