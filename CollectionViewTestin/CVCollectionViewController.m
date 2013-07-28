@@ -38,7 +38,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return 5;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
@@ -47,6 +47,9 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     CVCollectionViewCell *viewCell = (CVCollectionViewCell *)cell;
     viewCell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
+
+    NSArray *colors = [NSArray arrayWithObjects:[UIColor greenColor],[UIColor redColor], [UIColor blueColor], [UIColor brownColor], [UIColor orangeColor], nil];
+    viewCell.backgroundColor = colors[indexPath.row];
     return cell;
 }
 
