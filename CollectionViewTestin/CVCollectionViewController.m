@@ -10,7 +10,6 @@
 #import "CVCollectionViewCell.h"
 
 @interface CVCollectionViewController ()
-
 @end
 
 @implementation CVCollectionViewController
@@ -36,9 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+#define NumberOfItems 10
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 5;
+    return NumberOfItems;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
@@ -49,8 +50,22 @@
     viewCell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
 
     NSArray *colors = [NSArray arrayWithObjects:[UIColor greenColor],[UIColor redColor], [UIColor blueColor], [UIColor brownColor], [UIColor orangeColor], nil];
-    viewCell.contentView.backgroundColor = colors[indexPath.row];
+    viewCell.contentView.backgroundColor = colors[indexPath.row % colors.count];
     return cell;
+}
+
+- (IBAction)tap:(UITapGestureRecognizer *)sender {
+    UICollectionViewCell *viewFromSender = (UICollectionViewCell *) sender.view;
+    UICollectionViewCell *viewFromVisible= [[self.collectionView visibleCells] firstObject];
+
+    NSIndexPath *pathFromSender = [self.collectionView indexPathForCell:viewFromSender];
+    NSIndexPath *pathFromVisible= [self.collectionView indexPathForCell:viewFromVisible];
+
+    NSLog(@"sender:  %@",  pathFromSender);
+    NSLog(@"visible: %@", pathFromVisible);
+//    NSString *stringFromSender = [NSString stringWithFormat:@"sender:  %@", pathFromSender];
+//    NSString *stringFromVisible= [NSString stringWithFormat:@"visible: %@", pathFromVisible];
+//    self.debugLabel.text = [NSString stringWithFormat:@"%@\n%@", stringFromSender, stringFromVisible];
 }
 
 @end
